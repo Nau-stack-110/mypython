@@ -1,0 +1,10 @@
+type = diesel ,
+ vitesse = 39 ,
+ prix_carburant = 6000.00 ,
+ distance = 78 ,
+ temps = 2 ,
+ consommation = 4 ,
+ annesortie = 2023 ,
+ chevaux = 2 
+ 
+ 

@@ -309,7 +309,7 @@
         "kind": 2,
         "importPath": "pass_hack",
         "description": "pass_hack",
-        "peekOfCode": "def generate_password():\n    mot = random.choice(mot_mal)\n    l_rest = random.randint(0, 14 - len(mot))\n    for i in range(l_rest):\n        mot += random.choice(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\" + symboles)\n    return mot\npasswords = [generate_password() for i in range(1500)]\nwith open(\"password.txt\", \"w\") as file:\n    file.write(\"\\n\".join(passwords))\nprint(\"1500 password génerés et sauvegardés dans password.txt\")",
+        "peekOfCode": "def generate_password():\n    mot = random.choice(mot_mal)\n    l_rest = random.randint(0, 14 - len(mot))\n    for i in range(l_rest):\n        mot += random.choice(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\" + symbole)\n    return mot\npasswords = [generate_password() for i in range(1500)]\nwith open(\"password.txt\", \"w\") as file:\n    file.write(\"\\n\".join(passwords))\nprint(\"1500 password génerés et sauvegardés dans password.txt\")",
         "detail": "pass_hack",
         "documentation": {}
     },
@@ -327,7 +327,7 @@
         "kind": 5,
         "importPath": "pass_hack",
         "description": "pass_hack",
-        "peekOfCode": "symbole = \"@#$*/?:!*%+-.&\\ 0123456789\"\ndef generate_password():\n    mot = random.choice(mot_mal)\n    l_rest = random.randint(0, 14 - len(mot))\n    for i in range(l_rest):\n        mot += random.choice(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\" + symboles)\n    return mot\npasswords = [generate_password() for i in range(1500)]\nwith open(\"password.txt\", \"w\") as file:\n    file.write(\"\\n\".join(passwords))",
+        "peekOfCode": "symbole = \"@#$*/?:!*%+-.&\\ 0123456789\"\ndef generate_password():\n    mot = random.choice(mot_mal)\n    l_rest = random.randint(0, 14 - len(mot))\n    for i in range(l_rest):\n        mot += random.choice(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\" + symbole)\n    return mot\npasswords = [generate_password() for i in range(1500)]\nwith open(\"password.txt\", \"w\") as file:\n    file.write(\"\\n\".join(passwords))",
         "detail": "pass_hack",
         "documentation": {}
     },
@@ -338,6 +338,42 @@
         "description": "pass_hack",
         "peekOfCode": "passwords = [generate_password() for i in range(1500)]\nwith open(\"password.txt\", \"w\") as file:\n    file.write(\"\\n\".join(passwords))\nprint(\"1500 password génerés et sauvegardés dans password.txt\")",
         "detail": "pass_hack",
+        "documentation": {}
+    },
+    {
+        "label": "generate_password",
+        "kind": 2,
+        "importPath": "pass_hack2",
+        "description": "pass_hack2",
+        "peekOfCode": "def generate_password():\n    mot = random.choice(mot_mal)\n    l_rest = random.randint(0, 14 - len(mot))\n    for i in range(l_rest):\n        mot += random.choice(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\" + symbole)\n    return mot\npasswords = [generate_password() for i in range(5000)]\nwith open(\"password_5000.txt\", \"w\") as file:\n    file.write(\"\\n\".join(passwords))\nprint(\"5000 password génerés et sauvegardés dans password_5000.txt\")",
+        "detail": "pass_hack2",
+        "documentation": {}
+    },
+    {
+        "label": "mot_mal",
+        "kind": 5,
+        "importPath": "pass_hack2",
+        "description": "pass_hack2",
+        "peekOfCode": "mot_mal = [\n    \"Bozy\",\"ketaka\",\"Rindra\",\"Tiana\",\"Herizo\",\"Soa\",\"Finaritra\",\"sahaza\",\"linda\",\"sedy\",\"bema\",\"daika\",\"narovana\",\n    \"malala\",\"harimanitra\",\"dianah\",\"koto\",\"benja\",\"sedera\",\"nancy\",\"fanja\",\"john\",\"mika\",\"micka\",\"dadabe\",\"neny\",\n    \"safidy\",\"mioty\",\"sarindra\",\"nicole\",\"nomena\",\"toky\",\"toliniaina\",\"naunau\",\"haritiana\",\"sarah\",\"vatosoa\",\"faniry\",\n    \"faly\",\"tezitra\",\"bemaso\",\"faratiana\",\"farakely\",\"sanyh\",\"rakoto\",\"naina\",\"niaina\",\"fanomezantsoa\",\"njara\",\"laza\",\"zafy\",\n    \"nyavo\",\"navosoa\",\"chat\",\"alika\",\"kisoa\",\"kambana\",\"heritiana\",\"hery\",\"valisoa\",\"mandrindra\",\"olivier\",\"santatra\",\"sarobidy\",\"daniel\",\"mariah\"\n]\nsymbole = \"@#$*/?:!*%+-.&\\ 0123456789\"\ndef generate_password():\n    mot = random.choice(mot_mal)",
+        "detail": "pass_hack2",
+        "documentation": {}
+    },
+    {
+        "label": "symbole",
+        "kind": 5,
+        "importPath": "pass_hack2",
+        "description": "pass_hack2",
+        "peekOfCode": "symbole = \"@#$*/?:!*%+-.&\\ 0123456789\"\ndef generate_password():\n    mot = random.choice(mot_mal)\n    l_rest = random.randint(0, 14 - len(mot))\n    for i in range(l_rest):\n        mot += random.choice(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\" + symbole)\n    return mot\npasswords = [generate_password() for i in range(5000)]\nwith open(\"password_5000.txt\", \"w\") as file:\n    file.write(\"\\n\".join(passwords))",
+        "detail": "pass_hack2",
+        "documentation": {}
+    },
+    {
+        "label": "passwords",
+        "kind": 5,
+        "importPath": "pass_hack2",
+        "description": "pass_hack2",
+        "peekOfCode": "passwords = [generate_password() for i in range(5000)]\nwith open(\"password_5000.txt\", \"w\") as file:\n    file.write(\"\\n\".join(passwords))\nprint(\"5000 password génerés et sauvegardés dans password_5000.txt\")",
+        "detail": "pass_hack2",
         "documentation": {}
     },
     {

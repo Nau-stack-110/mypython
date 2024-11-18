@@ -1,0 +1,469 @@
+[
+    {
+        "label": "calendar",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "calendar",
+        "description": "calendar",
+        "detail": "calendar",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "arithmetic",
+        "kind": 2,
+        "importPath": "arithmetic_mean",
+        "description": "arithmetic_mean",
+        "peekOfCode": "def arithmetic(n, i):\n    total = sum(i)\n    mean = total / n\n    if total % n == 0:\n        return int(mean)\n    else:\n        return float(mean)\nresult = arithmetic(n, Y)\nprint(result)",
+        "detail": "arithmetic_mean",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "arithmetic_mean",
+        "description": "arithmetic_mean",
+        "peekOfCode": "n = int(input(\"entrer le nombre à analyser : \"))\nY = [ int(i) for i in input().split()]\n# total = 0\n# for i in Y:\n#     total += i\n#     mean = total / n\n# print(int(mean))\ndef arithmetic(n, i):\n    total = sum(i)\n    mean = total / n",
+        "detail": "arithmetic_mean",
+        "documentation": {}
+    },
+    {
+        "label": "Y",
+        "kind": 5,
+        "importPath": "arithmetic_mean",
+        "description": "arithmetic_mean",
+        "peekOfCode": "Y = [ int(i) for i in input().split()]\n# total = 0\n# for i in Y:\n#     total += i\n#     mean = total / n\n# print(int(mean))\ndef arithmetic(n, i):\n    total = sum(i)\n    mean = total / n\n    if total % n == 0:",
+        "detail": "arithmetic_mean",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "arithmetic_mean",
+        "description": "arithmetic_mean",
+        "peekOfCode": "result = arithmetic(n, Y)\nprint(result)",
+        "detail": "arithmetic_mean",
+        "documentation": {}
+    },
+    {
+        "label": "calc",
+        "kind": 2,
+        "importPath": "calc_function",
+        "description": "calc_function",
+        "peekOfCode": "def calc(x, y):\n    c = x + y\n    print(c)\ndef sub(x, y):\n    c = x - y\n    print(c)\ndef mult(x, y):\n    c = x * y\n    print(c)\ndef divide(x, y):",
+        "detail": "calc_function",
+        "documentation": {}
+    },
+    {
+        "label": "sub",
+        "kind": 2,
+        "importPath": "calc_function",
+        "description": "calc_function",
+        "peekOfCode": "def sub(x, y):\n    c = x - y\n    print(c)\ndef mult(x, y):\n    c = x * y\n    print(c)\ndef divide(x, y):\n    c = x / y\n    print(c)\ndef enter():",
+        "detail": "calc_function",
+        "documentation": {}
+    },
+    {
+        "label": "mult",
+        "kind": 2,
+        "importPath": "calc_function",
+        "description": "calc_function",
+        "peekOfCode": "def mult(x, y):\n    c = x * y\n    print(c)\ndef divide(x, y):\n    c = x / y\n    print(c)\ndef enter():\n    a = int(input(\"entrer a: \"))\n    b = int(input(\"entrer B: \"))\n    op = input()",
+        "detail": "calc_function",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "kind": 2,
+        "importPath": "calc_function",
+        "description": "calc_function",
+        "peekOfCode": "def divide(x, y):\n    c = x / y\n    print(c)\ndef enter():\n    a = int(input(\"entrer a: \"))\n    b = int(input(\"entrer B: \"))\n    op = input()\n    if(op == \"/\"):\n        divide(a,b)\n    elif op == \"-\":",
+        "detail": "calc_function",
+        "documentation": {}
+    },
+    {
+        "label": "enter",
+        "kind": 2,
+        "importPath": "calc_function",
+        "description": "calc_function",
+        "peekOfCode": "def enter():\n    a = int(input(\"entrer a: \"))\n    b = int(input(\"entrer B: \"))\n    op = input()\n    if(op == \"/\"):\n        divide(a,b)\n    elif op == \"-\":\n        sub(a,b)\n    elif op == \"*\":\n        mult(a, b)",
+        "detail": "calc_function",
+        "documentation": {}
+    },
+    {
+        "label": "custom_exit_handler",
+        "kind": 2,
+        "importPath": "date_calendar",
+        "description": "date_calendar",
+        "peekOfCode": "def custom_exit_handler():\n    print('You clicked exit button')\n    root.destroy()   \ndef printCalendar():\n    year = int(year_entry.get())\n    cal = calendar.TextCalendar().formatyear(year, 2,1,1,3)\n    result_text.delete(1.0, END)\n    result_text.insert(INSERT, cal)\nroot = tk.Tk()\nroot.title(\"calendar_nay\")",
+        "detail": "date_calendar",
+        "documentation": {}
+    },
+    {
+        "label": "printCalendar",
+        "kind": 2,
+        "importPath": "date_calendar",
+        "description": "date_calendar",
+        "peekOfCode": "def printCalendar():\n    year = int(year_entry.get())\n    cal = calendar.TextCalendar().formatyear(year, 2,1,1,3)\n    result_text.delete(1.0, END)\n    result_text.insert(INSERT, cal)\nroot = tk.Tk()\nroot.title(\"calendar_nay\")\nroot.geometry('700x600')\n# frame\ncalendar_frame = tk.Frame(root)",
+        "detail": "date_calendar",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "date_calendar",
+        "description": "date_calendar",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"calendar_nay\")\nroot.geometry('700x600')\n# frame\ncalendar_frame = tk.Frame(root)\ncalendar_frame.pack(pady=10)\n# label\nyear_label = tk.Label(calendar_frame, text=\"year : \")\nyear_label.grid(row=0, column=0, padx=5)\n# get the input",
+        "detail": "date_calendar",
+        "documentation": {}
+    },
+    {
+        "label": "calendar_frame",
+        "kind": 5,
+        "importPath": "date_calendar",
+        "description": "date_calendar",
+        "peekOfCode": "calendar_frame = tk.Frame(root)\ncalendar_frame.pack(pady=10)\n# label\nyear_label = tk.Label(calendar_frame, text=\"year : \")\nyear_label.grid(row=0, column=0, padx=5)\n# get the input\nyear_entry = tk.Entry(calendar_frame)\nyear_entry.grid(row=0, column=1, padx=5)\n# button to show calendar\nbouton = tk.Button(calendar_frame, text = \"Show calendar Year\",command=printCalendar)",
+        "detail": "date_calendar",
+        "documentation": {}
+    },
+    {
+        "label": "year_label",
+        "kind": 5,
+        "importPath": "date_calendar",
+        "description": "date_calendar",
+        "peekOfCode": "year_label = tk.Label(calendar_frame, text=\"year : \")\nyear_label.grid(row=0, column=0, padx=5)\n# get the input\nyear_entry = tk.Entry(calendar_frame)\nyear_entry.grid(row=0, column=1, padx=5)\n# button to show calendar\nbouton = tk.Button(calendar_frame, text = \"Show calendar Year\",command=printCalendar)\nbouton.grid(row=0, column=2 , padx=5)\n# result the print calendar\nresult_text_frame = tk.Frame(root)",
+        "detail": "date_calendar",
+        "documentation": {}
+    },
+    {
+        "label": "year_entry",
+        "kind": 5,
+        "importPath": "date_calendar",
+        "description": "date_calendar",
+        "peekOfCode": "year_entry = tk.Entry(calendar_frame)\nyear_entry.grid(row=0, column=1, padx=5)\n# button to show calendar\nbouton = tk.Button(calendar_frame, text = \"Show calendar Year\",command=printCalendar)\nbouton.grid(row=0, column=2 , padx=5)\n# result the print calendar\nresult_text_frame = tk.Frame(root)\nresult_text_frame.pack(pady=4)\n# result text in the frame\nresult_text = tk.Text(result_text_frame, height=20, width=55, wrap=\"none\")",
+        "detail": "date_calendar",
+        "documentation": {}
+    },
+    {
+        "label": "bouton",
+        "kind": 5,
+        "importPath": "date_calendar",
+        "description": "date_calendar",
+        "peekOfCode": "bouton = tk.Button(calendar_frame, text = \"Show calendar Year\",command=printCalendar)\nbouton.grid(row=0, column=2 , padx=5)\n# result the print calendar\nresult_text_frame = tk.Frame(root)\nresult_text_frame.pack(pady=4)\n# result text in the frame\nresult_text = tk.Text(result_text_frame, height=20, width=55, wrap=\"none\")\nresult_text.grid(row=0, column=0)\n# scrollbar to go to the end of frame vertical\nscrollbar = tk.Scrollbar(result_text_frame, command=result_text.yview)",
+        "detail": "date_calendar",
+        "documentation": {}
+    },
+    {
+        "label": "result_text_frame",
+        "kind": 5,
+        "importPath": "date_calendar",
+        "description": "date_calendar",
+        "peekOfCode": "result_text_frame = tk.Frame(root)\nresult_text_frame.pack(pady=4)\n# result text in the frame\nresult_text = tk.Text(result_text_frame, height=20, width=55, wrap=\"none\")\nresult_text.grid(row=0, column=0)\n# scrollbar to go to the end of frame vertical\nscrollbar = tk.Scrollbar(result_text_frame, command=result_text.yview)\nscrollbar.grid(row=0, column=1, sticky='nsew')\nresult_text['yscrollcommand'] = scrollbar.set\n# scrollbar to go to the end of frame horizontal",
+        "detail": "date_calendar",
+        "documentation": {}
+    },
+    {
+        "label": "result_text",
+        "kind": 5,
+        "importPath": "date_calendar",
+        "description": "date_calendar",
+        "peekOfCode": "result_text = tk.Text(result_text_frame, height=20, width=55, wrap=\"none\")\nresult_text.grid(row=0, column=0)\n# scrollbar to go to the end of frame vertical\nscrollbar = tk.Scrollbar(result_text_frame, command=result_text.yview)\nscrollbar.grid(row=0, column=1, sticky='nsew')\nresult_text['yscrollcommand'] = scrollbar.set\n# scrollbar to go to the end of frame horizontal\nscrollbar = tk.Scrollbar(result_text_frame,command=result_text.xview, orient=\"horizontal\")\nscrollbar.grid(row=1, column=0, sticky='nsew')\nresult_text['xscrollcommand'] = scrollbar.set",
+        "detail": "date_calendar",
+        "documentation": {}
+    },
+    {
+        "label": "scrollbar",
+        "kind": 5,
+        "importPath": "date_calendar",
+        "description": "date_calendar",
+        "peekOfCode": "scrollbar = tk.Scrollbar(result_text_frame, command=result_text.yview)\nscrollbar.grid(row=0, column=1, sticky='nsew')\nresult_text['yscrollcommand'] = scrollbar.set\n# scrollbar to go to the end of frame horizontal\nscrollbar = tk.Scrollbar(result_text_frame,command=result_text.xview, orient=\"horizontal\")\nscrollbar.grid(row=1, column=0, sticky='nsew')\nresult_text['xscrollcommand'] = scrollbar.set\nroot.protocol(\"WM_DELETE_WINDOW\", custom_exit_handler)\nroot.mainloop()",
+        "detail": "date_calendar",
+        "documentation": {}
+    },
+    {
+        "label": "result_text['yscrollcommand']",
+        "kind": 5,
+        "importPath": "date_calendar",
+        "description": "date_calendar",
+        "peekOfCode": "result_text['yscrollcommand'] = scrollbar.set\n# scrollbar to go to the end of frame horizontal\nscrollbar = tk.Scrollbar(result_text_frame,command=result_text.xview, orient=\"horizontal\")\nscrollbar.grid(row=1, column=0, sticky='nsew')\nresult_text['xscrollcommand'] = scrollbar.set\nroot.protocol(\"WM_DELETE_WINDOW\", custom_exit_handler)\nroot.mainloop()",
+        "detail": "date_calendar",
+        "documentation": {}
+    },
+    {
+        "label": "scrollbar",
+        "kind": 5,
+        "importPath": "date_calendar",
+        "description": "date_calendar",
+        "peekOfCode": "scrollbar = tk.Scrollbar(result_text_frame,command=result_text.xview, orient=\"horizontal\")\nscrollbar.grid(row=1, column=0, sticky='nsew')\nresult_text['xscrollcommand'] = scrollbar.set\nroot.protocol(\"WM_DELETE_WINDOW\", custom_exit_handler)\nroot.mainloop()",
+        "detail": "date_calendar",
+        "documentation": {}
+    },
+    {
+        "label": "result_text['xscrollcommand']",
+        "kind": 5,
+        "importPath": "date_calendar",
+        "description": "date_calendar",
+        "peekOfCode": "result_text['xscrollcommand'] = scrollbar.set\nroot.protocol(\"WM_DELETE_WINDOW\", custom_exit_handler)\nroot.mainloop()",
+        "detail": "date_calendar",
+        "documentation": {}
+    },
+    {
+        "label": "secret",
+        "kind": 5,
+        "importPath": "hasard",
+        "description": "hasard",
+        "peekOfCode": "secret = random.randrange(0, 10)\nfor i in range(3):\n    x = int(input(\"Entrer un nombre entre 0 et 10 :\"))\n    if x == secret:\n        print(\"bravos, vous avez gagné\")\n        exit()\n    elif x > secret:\n        print(\"plus grand\")\n    else:\n        print(\"plus petit\")",
+        "detail": "hasard",
+        "documentation": {}
+    },
+    {
+        "label": "nom",
+        "kind": 5,
+        "importPath": "l3",
+        "description": "l3",
+        "peekOfCode": "nom = input(\"entrer votre propre Nom :\")\ntaille = float(input(\"entrer votre taille en cm :\"))\npoids = float(input(\"entrer votre poids en kg :\"))\ntaille_c = taille / 100\nimc = poids / pow(taille_c, 2)\nprint(float(imc))\nif imc <= 18.5 :\n    print(\"Vous etes normal!\")\nelse :\n    print(\"bota be ianao\")",
+        "detail": "l3",
+        "documentation": {}
+    },
+    {
+        "label": "taille",
+        "kind": 5,
+        "importPath": "l3",
+        "description": "l3",
+        "peekOfCode": "taille = float(input(\"entrer votre taille en cm :\"))\npoids = float(input(\"entrer votre poids en kg :\"))\ntaille_c = taille / 100\nimc = poids / pow(taille_c, 2)\nprint(float(imc))\nif imc <= 18.5 :\n    print(\"Vous etes normal!\")\nelse :\n    print(\"bota be ianao\")",
+        "detail": "l3",
+        "documentation": {}
+    },
+    {
+        "label": "poids",
+        "kind": 5,
+        "importPath": "l3",
+        "description": "l3",
+        "peekOfCode": "poids = float(input(\"entrer votre poids en kg :\"))\ntaille_c = taille / 100\nimc = poids / pow(taille_c, 2)\nprint(float(imc))\nif imc <= 18.5 :\n    print(\"Vous etes normal!\")\nelse :\n    print(\"bota be ianao\")",
+        "detail": "l3",
+        "documentation": {}
+    },
+    {
+        "label": "taille_c",
+        "kind": 5,
+        "importPath": "l3",
+        "description": "l3",
+        "peekOfCode": "taille_c = taille / 100\nimc = poids / pow(taille_c, 2)\nprint(float(imc))\nif imc <= 18.5 :\n    print(\"Vous etes normal!\")\nelse :\n    print(\"bota be ianao\")",
+        "detail": "l3",
+        "documentation": {}
+    },
+    {
+        "label": "imc",
+        "kind": 5,
+        "importPath": "l3",
+        "description": "l3",
+        "peekOfCode": "imc = poids / pow(taille_c, 2)\nprint(float(imc))\nif imc <= 18.5 :\n    print(\"Vous etes normal!\")\nelse :\n    print(\"bota be ianao\")",
+        "detail": "l3",
+        "documentation": {}
+    },
+    {
+        "label": "age1",
+        "kind": 5,
+        "importPath": "l3_2",
+        "description": "l3_2",
+        "peekOfCode": "age1 = input(\"entrer votre age :\")\nage2 = float(input(\"entrer l'age de votre voisin :\"))\nif age2 > age1:\n  print('')\nelif age1 > age2:\n  print('')\nelse:\n    print('')",
+        "detail": "l3_2",
+        "documentation": {}
+    },
+    {
+        "label": "age2",
+        "kind": 5,
+        "importPath": "l3_2",
+        "description": "l3_2",
+        "peekOfCode": "age2 = float(input(\"entrer l'age de votre voisin :\"))\nif age2 > age1:\n  print('')\nelif age1 > age2:\n  print('')\nelse:\n    print('')",
+        "detail": "l3_2",
+        "documentation": {}
+    },
+    {
+        "label": "generate_password",
+        "kind": 2,
+        "importPath": "pass_hack",
+        "description": "pass_hack",
+        "peekOfCode": "def generate_password():\n    mot = random.choice(mot_mal)\n    l_rest = random.randint(0, 14 - len(mot))\n    for i in range(l_rest):\n        mot += random.choice(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\" + symboles)\n    return mot\npasswords = [generate_password() for i in range(1500)]\nwith open(\"password.txt\", \"w\") as file:\n    file.write(\"\\n\".join(passwords))\nprint(\"1500 password génerés et sauvegardés dans password.txt\")",
+        "detail": "pass_hack",
+        "documentation": {}
+    },
+    {
+        "label": "mot_mal",
+        "kind": 5,
+        "importPath": "pass_hack",
+        "description": "pass_hack",
+        "peekOfCode": "mot_mal = [\n    \"Bozy\",\"ketaka\",\"Rindra\",\"Tiana\",\"Herizo\",\"Soa\",\"Finaritra\",\"sahaza\",\"linda\",\"sedy\",\"bema\",\"daika\",\"narovana\",\n    \"malala\",\"harimanitra\",\"dianah\",\"koto\",\"benja\",\"sedera\",\"nancy\",\"fanja\",\"john\",\"mika\",\"micka\",\"dadabe\",\"neny\",\n    \"safidy\",\"mioty\",\"sarindra\",\"nicole\",\"nomena\",\"toky\",\"toliniaina\",\"naunau\",\"haritiana\",\"sarah\",\"vatosoa\",\"faniry\",\n    \"faly\",\"tezitra\",\"bemaso\",\"faratiana\",\"farakely\",\"sanyh\",\"rakoto\",\"naina\",\"niaina\",\"fanomezantsoa\",\"njara\",\"laza\",\"zafy\"\n]\nsymbole = \"@#$*/?:!*%+-.&\\ 0123456789\"\ndef generate_password():\n    mot = random.choice(mot_mal)\n    l_rest = random.randint(0, 14 - len(mot))",
+        "detail": "pass_hack",
+        "documentation": {}
+    },
+    {
+        "label": "symbole",
+        "kind": 5,
+        "importPath": "pass_hack",
+        "description": "pass_hack",
+        "peekOfCode": "symbole = \"@#$*/?:!*%+-.&\\ 0123456789\"\ndef generate_password():\n    mot = random.choice(mot_mal)\n    l_rest = random.randint(0, 14 - len(mot))\n    for i in range(l_rest):\n        mot += random.choice(\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\" + symboles)\n    return mot\npasswords = [generate_password() for i in range(1500)]\nwith open(\"password.txt\", \"w\") as file:\n    file.write(\"\\n\".join(passwords))",
+        "detail": "pass_hack",
+        "documentation": {}
+    },
+    {
+        "label": "passwords",
+        "kind": 5,
+        "importPath": "pass_hack",
+        "description": "pass_hack",
+        "peekOfCode": "passwords = [generate_password() for i in range(1500)]\nwith open(\"password.txt\", \"w\") as file:\n    file.write(\"\\n\".join(passwords))\nprint(\"1500 password génerés et sauvegardés dans password.txt\")",
+        "detail": "pass_hack",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "temperature",
+        "description": "temperature",
+        "peekOfCode": "n = int(input(\"enter le nombre de temperature à analyser : \"))\nT = [int(i) for i in input().split()]\npos = []\nneg = []\nfor t in T:\n    if t > 0:\n        pos.append(t)\n    elif t < 0:\n        neg.append(t)\nif pos == [] and neg == []:",
+        "detail": "temperature",
+        "documentation": {}
+    },
+    {
+        "label": "T",
+        "kind": 5,
+        "importPath": "temperature",
+        "description": "temperature",
+        "peekOfCode": "T = [int(i) for i in input().split()]\npos = []\nneg = []\nfor t in T:\n    if t > 0:\n        pos.append(t)\n    elif t < 0:\n        neg.append(t)\nif pos == [] and neg == []:\n    print(\"0\")",
+        "detail": "temperature",
+        "documentation": {}
+    },
+    {
+        "label": "pos",
+        "kind": 5,
+        "importPath": "temperature",
+        "description": "temperature",
+        "peekOfCode": "pos = []\nneg = []\nfor t in T:\n    if t > 0:\n        pos.append(t)\n    elif t < 0:\n        neg.append(t)\nif pos == [] and neg == []:\n    print(\"0\")\nelif pos == []:",
+        "detail": "temperature",
+        "documentation": {}
+    },
+    {
+        "label": "neg",
+        "kind": 5,
+        "importPath": "temperature",
+        "description": "temperature",
+        "peekOfCode": "neg = []\nfor t in T:\n    if t > 0:\n        pos.append(t)\n    elif t < 0:\n        neg.append(t)\nif pos == [] and neg == []:\n    print(\"0\")\nelif pos == []:\n    print(max(neg))",
+        "detail": "temperature",
+        "documentation": {}
+    },
+    {
+        "label": "custom_exit_handler",
+        "kind": 2,
+        "importPath": "testkely",
+        "description": "testkely",
+        "peekOfCode": "def custom_exit_handler():\n    print('You clicked exit button')\n    root.destroy()\nroot = tk.Tk()\nroot.geometry('400x200')\nroot.title(\"Test kely naunau\")\nroot.protocol(\"WM_DELETE_WINDOW\", custom_exit_handler)\nroot.mainloop()",
+        "detail": "testkely",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "testkely",
+        "description": "testkely",
+        "peekOfCode": "root = tk.Tk()\nroot.geometry('400x200')\nroot.title(\"Test kely naunau\")\nroot.protocol(\"WM_DELETE_WINDOW\", custom_exit_handler)\nroot.mainloop()",
+        "detail": "testkely",
+        "documentation": {}
+    },
+    {
+        "label": "Voiture",
+        "kind": 6,
+        "importPath": "voiture",
+        "description": "voiture",
+        "peekOfCode": "class Voiture:\n    def __init__(self, type, distance, vitesse, temps, consommation, annesortie, chevaux):\n        self.type = type\n        self.prix_carburant = 6000\n        self.distance = distance\n        self.vitesse = vitesse\n        self.temps = temps\n        self.consommation = consommation\n        self.annesortie = annesortie\n        self.chevaux = chevaux",
+        "detail": "voiture",
+        "documentation": {}
+    },
+    {
+        "label": "car",
+        "kind": 5,
+        "importPath": "voiture",
+        "description": "voiture",
+        "peekOfCode": "car = Voiture(str,int,int,int,int,int,str)   \ncar.type = input(\"entrer le type de votre voiture : \")\ncar.vitesse = int(input(\"entrer la vitesse en km/h : \"))\ncar.temps = int(input(\"entrer le temps : \"))\ncar.consommation = int(input(\"entrer la consommation : \"))\ncar.annesortie = int(input(\"entrer l\\'année de sortie : \"))\ncar.chevaux = input(\"entrer chevaux : \")\nprint(car.dist_parcouru())\nprint(car.depense())\nprint(car.enregistre())",
+        "detail": "voiture",
+        "documentation": {}
+    },
+    {
+        "label": "car.type",
+        "kind": 5,
+        "importPath": "voiture",
+        "description": "voiture",
+        "peekOfCode": "car.type = input(\"entrer le type de votre voiture : \")\ncar.vitesse = int(input(\"entrer la vitesse en km/h : \"))\ncar.temps = int(input(\"entrer le temps : \"))\ncar.consommation = int(input(\"entrer la consommation : \"))\ncar.annesortie = int(input(\"entrer l\\'année de sortie : \"))\ncar.chevaux = input(\"entrer chevaux : \")\nprint(car.dist_parcouru())\nprint(car.depense())\nprint(car.enregistre())",
+        "detail": "voiture",
+        "documentation": {}
+    },
+    {
+        "label": "car.vitesse",
+        "kind": 5,
+        "importPath": "voiture",
+        "description": "voiture",
+        "peekOfCode": "car.vitesse = int(input(\"entrer la vitesse en km/h : \"))\ncar.temps = int(input(\"entrer le temps : \"))\ncar.consommation = int(input(\"entrer la consommation : \"))\ncar.annesortie = int(input(\"entrer l\\'année de sortie : \"))\ncar.chevaux = input(\"entrer chevaux : \")\nprint(car.dist_parcouru())\nprint(car.depense())\nprint(car.enregistre())",
+        "detail": "voiture",
+        "documentation": {}
+    },
+    {
+        "label": "car.temps",
+        "kind": 5,
+        "importPath": "voiture",
+        "description": "voiture",
+        "peekOfCode": "car.temps = int(input(\"entrer le temps : \"))\ncar.consommation = int(input(\"entrer la consommation : \"))\ncar.annesortie = int(input(\"entrer l\\'année de sortie : \"))\ncar.chevaux = input(\"entrer chevaux : \")\nprint(car.dist_parcouru())\nprint(car.depense())\nprint(car.enregistre())",
+        "detail": "voiture",
+        "documentation": {}
+    },
+    {
+        "label": "car.consommation",
+        "kind": 5,
+        "importPath": "voiture",
+        "description": "voiture",
+        "peekOfCode": "car.consommation = int(input(\"entrer la consommation : \"))\ncar.annesortie = int(input(\"entrer l\\'année de sortie : \"))\ncar.chevaux = input(\"entrer chevaux : \")\nprint(car.dist_parcouru())\nprint(car.depense())\nprint(car.enregistre())",
+        "detail": "voiture",
+        "documentation": {}
+    },
+    {
+        "label": "car.annesortie",
+        "kind": 5,
+        "importPath": "voiture",
+        "description": "voiture",
+        "peekOfCode": "car.annesortie = int(input(\"entrer l\\'année de sortie : \"))\ncar.chevaux = input(\"entrer chevaux : \")\nprint(car.dist_parcouru())\nprint(car.depense())\nprint(car.enregistre())",
+        "detail": "voiture",
+        "documentation": {}
+    },
+    {
+        "label": "car.chevaux",
+        "kind": 5,
+        "importPath": "voiture",
+        "description": "voiture",
+        "peekOfCode": "car.chevaux = input(\"entrer chevaux : \")\nprint(car.dist_parcouru())\nprint(car.depense())\nprint(car.enregistre())",
+        "detail": "voiture",
+        "documentation": {}
+    }
+]

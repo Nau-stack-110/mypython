@@ -35,6 +35,24 @@
         "documentation": {}
     },
     {
+        "label": "s",
+        "kind": 5,
+        "importPath": "adn",
+        "description": "adn",
+        "peekOfCode": "s = input().split()\na = 0\nfor i in range(s):\n    a += i   \nprint( f\"{a}['A'] \",\" {a}['C'] \",\" {a}['G'] \",\" {a}['T']\" )",
+        "detail": "adn",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "adn",
+        "description": "adn",
+        "peekOfCode": "a = 0\nfor i in range(s):\n    a += i   \nprint( f\"{a}['A'] \",\" {a}['C'] \",\" {a}['G'] \",\" {a}['T']\" )",
+        "detail": "adn",
+        "documentation": {}
+    },
+    {
         "label": "arithmetic",
         "kind": 2,
         "importPath": "arithmetic_mean",
@@ -417,7 +435,7 @@
         "kind": 2,
         "importPath": "testkely",
         "description": "testkely",
-        "peekOfCode": "def custom_exit_handler():\n    print('You clicked exit button')\n    root.destroy()\nroot = tk.Tk()\nroot.geometry('400x200')\nroot.title(\"Test kely naunau\")\nroot.protocol(\"WM_DELETE_WINDOW\", custom_exit_handler)\nroot.mainloop()",
+        "peekOfCode": "def custom_exit_handler():\n    print('You clicked exit button')\n    root.destroy()\nroot = tk.Tk()\nroot.geometry('400x200')\nroot.title(\"Test kely naunau\")\nroot.protocol(\"WM_DELETE_WINDOW\", custom_exit_handler)\nroot.mainloop()\n# Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned",
         "detail": "testkely",
         "documentation": {}
     },
@@ -426,7 +444,7 @@
         "kind": 5,
         "importPath": "testkely",
         "description": "testkely",
-        "peekOfCode": "root = tk.Tk()\nroot.geometry('400x200')\nroot.title(\"Test kely naunau\")\nroot.protocol(\"WM_DELETE_WINDOW\", custom_exit_handler)\nroot.mainloop()",
+        "peekOfCode": "root = tk.Tk()\nroot.geometry('400x200')\nroot.title(\"Test kely naunau\")\nroot.protocol(\"WM_DELETE_WINDOW\", custom_exit_handler)\nroot.mainloop()\n# Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned",
         "detail": "testkely",
         "documentation": {}
     },
